@@ -1,0 +1,2 @@
+# Automata
+Various cellular automata

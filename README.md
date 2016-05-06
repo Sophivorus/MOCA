@@ -1,2 +1,3 @@
-# Automata
-Various cellular automata
+Automata
+========
+Cellular automata and other experiments

@@ -1,3 +1,3 @@
 # Automata
 
-Cellular automata and other visual experiments
+Cellular automata and other experiments

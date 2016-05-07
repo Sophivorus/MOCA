@@ -1,3 +1,3 @@
 # Automata
 
-Cellular automata and other experiments
+Cellular automata and related experiments

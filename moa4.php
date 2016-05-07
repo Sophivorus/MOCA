@@ -46,14 +46,12 @@ for ( $y = 0; $y < $height; $y++ ) {
 			$leftPixel = $currentRow[ $x - 1 ];
 			$leftPixel->r++;
 		} else {
-			$leftX = $previousPixel->x - 1;
-			$leftY = $previousPixel->y + 1;
-			$leftR = $previousPixel->r + 1;
-			$leftG = $previousPixel->g;
-			$leftB = $previousPixel->b;
-			$leftPixel = new Pixel( $leftX, $leftY, $leftR, $leftG, $leftB );
+			$leftPixel = clone $previousPixel;
+			$leftPixel->x--;
+			$leftPixel->y++;
+			$leftPixel->r++;
 		}
-		$currentRow[ $leftX ] = $leftPixel;
+		$currentRow[ $leftPixel->x ] = $leftPixel;
 
 		// Middle pixel
 		if ( array_key_exists( $x, $currentRow ) ) {

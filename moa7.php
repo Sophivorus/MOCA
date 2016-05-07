@@ -24,8 +24,8 @@ class Pixel {
 	}
 }
 
-$width = 2000;
-$height = 2000;
+$width = 1000;
+$height = 1000;
 $image = imagecreatetruecolor( $width, $height );
 
 $firstPixel = new Pixel( 0, 0, 0, 0, 0 );
@@ -46,25 +46,26 @@ for ( $y = 0; $y < $height; $y++ ) {
 			$leftPixel = $currentRow[ $x - 1 ];
 			$leftPixel->r++;
 		} else {
-			$leftX = $previousPixel->x - 1;
-			$leftY = $previousPixel->y + 1;
-			$leftR = $previousPixel->r + 1;
-			$leftG = $previousPixel->g;
-			$leftB = $previousPixel->b;
-			$leftPixel = new Pixel( $leftX, $leftY, $leftR, $leftG, $leftB );
+			$leftPixel = $previousPixel;
+			$leftPixel->x--;
+			$leftPixel->y++;
+			$leftPixel->r++;
 		}
-		$currentRow[ $leftX ] = $leftPixel;
+		$currentRow[ $leftPixel->x ] = $leftPixel;
 
 		// Middle pixel
 		if ( array_key_exists( $x, $currentRow ) ) {
 			$middlePixel = $currentRow[ $x ];
 			$middlePixel->g++;
 		} else {
-			$middlePixel = $previousPixel;
-			$middlePixel->y++;
-			$middlePixel->g++;
+			$middleX = $previousPixel->x;
+			$middleY = $previousPixel->y + 1;
+			$middleR = $previousPixel->r;
+			$middleG = $previousPixel->g + 1;
+			$middleB = $previousPixel->b;
+			$middlePixel = new Pixel( $middleX, $middleY, $middleR, $middleG, $middleB );
 		}
-		$currentRow[ $middlePixel->x ] = $middlePixel;
+		$currentRow[ $middleX ] = $middlePixel;
 
 		// Right pixel
 		if ( array_key_exists( $x + 1, $currentRow ) ) {

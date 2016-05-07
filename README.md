@@ -1,3 +1,3 @@
-# Automata
+# Mysterious Organic Automata
 
-Cellular automata and related experiments
+I was trying to create a very simple image, a sort of Pascal's triangle but adding RGB values instead of numbers. In the way I got some cool errors (see errors 1, 2 and 3). But the fourth error was different. Suddenly, a very complex, organic and beautiful structure appeared. I did NOT expect that. I was shocked, amazed. I spent the rest of the afternoon exploring and playing with the code, which I still DON'T understand. I'm leaving the most interesting results. If someone can explain to me even a fraction of what's going on, I'll be indebted.

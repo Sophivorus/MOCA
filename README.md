@@ -1,6 +1,6 @@
 # Mysterious Organic Cellular Automata
 
-I was trying to create a very simple image, a sort of Pascal's triangle but adding RGB values instead of numbers (see the chromatic-pascal-triangle folder).
+I was trying to create a very simple image, a sort of [Pascal's triangle](https://en.wikipedia.org/wiki/Pascal's_triangle) but adding RGB values instead of numbers (see the chromatic-pascal-triangle folder).
 
 ![Chromatic Pascal triangle](chromatic-pascal-triangle/chromatic-pascal-triangle.png)
 
@@ -26,4 +26,4 @@ I did NOT expect that. I was shocked, amazed. I spent the rest of the day playin
 
 If someone can explain to me what's going on, I'll be really thankful.
 
-PS: I lost the code for moca1, moca2 and moca6. moca0 is just moca3 but smaller.
+Note: I lost the code for moca1, moca2 and moca6. moca0 is just moca3 but smaller.
